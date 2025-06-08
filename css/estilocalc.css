@@ -1,0 +1,50 @@
+#bodyCalc{
+    height: auto;
+    width: 80%;
+    margin-top: 4%;
+    margin-left: 10%;
+    height: fit-content;
+    display: flex;
+    border-radius: 8px;
+    border: solid;
+}
+
+.inputs{
+    width: fit-content;
+    margin: 10px;
+}
+
+.inputs p{
+    color: #3a9f2e;
+}
+
+.campo{
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+#inputs1{
+    float: left;
+}
+
+#btnCalcular{
+    height: 75px;
+    margin: 5px;
+    margin-top: 15%;
+}
+
+#resultados li{
+    font-size: 17px;
+    list-style: none;
+}
+
+#resultados{
+    width: 40%;
+}
+
+#txtCalc{
+    font-family: Georgia, serif;
+    font-size: 50px;
+    color :#3a9f2e;
+    margin-left: 10%;
+}

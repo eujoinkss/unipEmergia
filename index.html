@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" media="screen" />
+    <script type="text/javascript" src="js/jsindex.js"></script>
+    <title>Emergia e seus conceitos</title>
+</head>
+<body>
+    <header id="cabecalho" align="center">
+        <img src="img/bannerPag.jfif" alt="Banner principal">
+    </header>
+    <div id="body-text">
+        <div class="txtH1">
+            <h1>Introdução a Emergia</h1>
+            <img src="img/folha.png" class="BTimg" id="folha">
+        </div>
+        <br>
+        <p>Emergia é uma metodologia criada por Howard T Odum, 
+            que objetiva quantificar a quantidade total de energia gasta na produção de um bem ou serviço, 
+            podendo ser utilizada como maneira de evitar o desperdício energético e melhorar a eficiência na empregação de energia. 
+            No processo de quantificação são utilizadas diversas fórmulas e leis, como as leis da termodinâmica, 
+            a teoria geral dos sistemas e uma álgebra própria. 
+        </p>
+        <br>
+        <div id="botoes">
+            <button class="btn" id="classif" onclick="abrirClassif()">Classificação</button>
+            <button class="btn" id="qual" onclick="abrirQual()">Qualidades</button>
+            <buttton class="btn" id="ex" onclick="abrirEx()">Exemplos</buttton>
+        </div>
+
+        <dialog class="modal" id="modalClassif">
+            <h2>Classificação de Emergia</h2>
+            <p id="txtClas">Na síntese da Emergia classifica-se os recursos utilizados em três diferentes categorias sendo elas: 
+                recursos renováveis no ambiente local, 
+                sendo aqueles que são utilizados de maneira mais lenta que a sua recuperação natural; 
+                Recursos não renováveis no meio natural, sendo aqueles que são consumidos em um ritmo maior que sua recuperação. 
+                E por fim Recursos provenientes da economia ou mercado econômico que representam todo suporte provido por empresas 
+                seja para o provimento de energia ou para o pagamento de mão de obra. </p>
+            <div id="clasImagens">
+                <img src="img/renovaveis.jfif" alt="Recursos renováveis">
+                <img src="img/naoRenovaveis.jfif" alt="Recursos não renováveis">
+                <h4>Recursos renováveis</h4> <h4 id="nr">Recursos não renováveis</h4>
+            </div>
+            <button class="btnFechar" onclick="fecharClassif()">Voltar</button>
+        </dialog>
+        <dialog class="modal" id="modalQual">
+            <h2>Qualidade da Emergia</h2>
+            <p>Odum também ressaltou que a capacidade que um determinado tipo de energia tem de realizar trabalho é pautada 
+                na quantidade e na qualidade desta. A qualidade de energantidade e na qualidade destaia se trata da quantidade 
+                de energia de um grau mais baixo que é necessária para produzir uma outra de grau maior, como por exemplo vários 
+                joules de de energia solar sendo necessários para produzir um joule de matéria orgânica, vários joules de matéria 
+                orgânica sendo necessários para produzir um joule de combustível fóssil e a lógica segue até o destino final, 
+                ou seja, até a última transformação. </p>
+            <button class="btnFechar" onclick="fecharQual()">Voltar</button>
+        </dialog>
+        <dialog class="modal" id="modalEx">
+            <h2>Exemplos práticos do impacto da Emergia</h2>
+            <div id="divtabela">
+                <img id="tabela" src="img/impactos.jfif" alt="tabela com exemplos do impacto da emergia">
+            </div>
+            <button class="btnFechar" onclick="fecharEx()">Voltar</button>
+        </dialog>
+        <div class="linha"></div>
+        <div class="txtH1">
+            <h1>Contabilização e valores unitários</h1>
+            <img src="img/folha.png">
+        </div>
+        <p>Independentemente da classificação do recurso ou da unidade utilizada para tal, 
+            todos os recursos são por fim contabilizados como emjoules solares ou como sua abreviação <strong>seJ</strong>, 
+            assim eliminando quaisquer barreiras que possam impedir a contabilização total. </p>
+        <p>No entanto para que esses recursos que possuem unidades diferentes possam enfim ser contabilizados, 
+            é necessário que sejam convertidos na base única comum, o <strong>seJ</strong>, e para tal utiliza-se a aplicação de
+             fatores de conversão ou coeficientes de intensidade de emergia nesses recursos. </p>
+        <br>
+        <p>Ademais, esses fatores e coeficientes são referidos genericamente como Valores Unitários de Energia ou 
+            <strong>UEV</strong> e podem ser definidos como:</p>
+        <ul>
+            <li><strong class="fator">Transformidade Solar:</strong> A emergia solar requerida para fazer 1 (um) Joule de um 
+                produto ou serviço. Sua unidade é o emjoule solar por Joule <strong>(seJ/J)</strong>.</li>
+            <li><strong class="fator">Emergia específica:</strong> A quantidade de emergia requerida para fazer uma unidade de 
+                massa de um produto ou serviço. Usualmente, a unidade da emergia específica é seJ/g e 
+                Emergia por unidade monetária: a quantidade de emergia requerida para gerar uma unidade econômica. 
+                A unidade da razão emergia por dinheiro é <strong>seJ/$</strong>.</li>
+        </ul>
+        <div class="linha"></div>
+        <div class="txtH1">
+            <h1>Etapas da avaliação ambiental para a síntese de emergia</h1>
+            <img src="img/folha.png" id="folhaDiferente">
+        </div>
+        <p>Temos então 3 etapas as quais ao serem realizadas, 
+            nos levam à quantidade de emergia empreendida em um ou mais processos sendo elas as seguintes:</p>
+        <p>A primeira etapa se baseia em formular um diagrama que objetiva esclarecer o fluxo de energia gasta, 
+            assim então incluindo todas as fontes de energia e de seu armazenamento até sua subsequente transformação 
+            em bens ou serviços.</p>
+        <p>A segunda etapa se pauta na construção de uma tabela que utilizará as informações levantadas no diagrama para a 
+            classificação da das fontes de energia em seus respectivos tipos de recurso. 
+            Após isto nessa mesma etapa é levantada outra tabela que agora deve contar com a quantidade, unidade, descrição e 
+            itens que constam no fluxo, além de contar também com o valor em UEV de cada fluxo. </p>
+        <p>Por fim, a terceira etapa pode ser sintetizada como a conversão das fontes de energia envolvidas no processo em 
+            6 índices Emergia, sendo estes o já conhecido Valor unitário em emergia(UEV), a Razão de rendimento em emergia(EYR), 
+            a Razão de carga ambiental(ELR), a Razão de investimento em emergia(EIR), a Porcentagem de Renovabilidade(%R) e o 
+            Índice de sustentabilidade ambiental(ESI). Os calculos podem ser feitos com base nas razões contidas nesta tabela:</p>
+        <div id="areaImg">
+            <img src="img/tabelaRel.jfif" alt="Tabela com os cálculos">
+        </div>
+        <a href="calculadoraEmergia.html" id="aCalc">Veja como as fórmulas funcionam! -></a>
+        <div class="linha"></div>
+        <div class="txtH1">
+            <h1>Como o Campus UNIP Marquês pode se beneficiar dessa aplicação do conceito?</h1>
+            <img src="img/folha.png" id="folhaDiferente">
+        </div>
+        <p>A UNIP pode desenvolver projetos ambientais integrando os cursos de Administração, 
+            Biologia e Arquitetura, promovendo soluções sustentáveis de forma prática e interdisciplinar. 
+            O uso de simulações em computadores ou softwares especializados permite estimar a emergia envolvida em sistemas urbanos,
+             na produção industrial ou no trabalho agrícola, ajudando a entender o real custo energético desses processos. 
+             Além disso, a universidade pode buscar parcerias com empresas comprometidas com a sustentabilidade, 
+             colaborando para criar soluções mais eficientes e responsáveis. Tudo isso fortalece uma educação ambiental de qualidade,
+              conectada com os desafios do mundo atual.</p>
+    </div>
+    <footer id="rodape" align="center">
+        <a id="creditos" href="creditos.html">Créditos</a>
+        <img src="img/UNIPlogo.png" alt="logo UNIP">
+    </footer>
+</body>
+</html>

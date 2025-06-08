@@ -1,0 +1,194 @@
+body{
+    margin: 0px;
+    font-family: Roobert ENEL, Avenir, Arial, sans-serif !important;
+}
+
+h2{
+    color:#3a9f2e;
+    font-family: Georgia, serif;
+}
+
+h4{
+    color: #3a9f2e;
+}
+
+li{
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.fator{
+    color:#4cc33f
+}
+
+#cabecalho img{
+    width: 100%;
+    height: 600px;
+}
+
+.txtH1 img{
+    width: 5%;
+    height: 5%;
+}
+
+.txtH1{
+    display: flex;
+}
+
+#body-text{
+    height: auto;
+    width: 80%;
+    margin-top: 4%;
+    margin-left: 10%;
+}
+
+#body-text h1{
+    font-family: Georgia, serif;
+    font-size: 50px;
+    color :#3a9f2e;
+}
+
+#body-text p{
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.btn{
+    padding: 25px 60px;
+    display: inline;
+    background-color: #3a9f2e;
+    border-radius: 30px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.btn:hover{
+    background-color: #4cc33f;
+}
+
+.modal::backdrop{
+    background-color: #6dff5c6b;
+    
+}
+
+.modal{
+    border: 0;
+    border-radius: 15px;
+    width: 80%;
+    box-shadow:  0 0 10px 0 #00000070;
+}
+
+.btnFechar{
+    width: 6%;
+    padding: 5px 2px;
+    float: right;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    border-color:#3a9f2e;
+    color: #3a9f2e;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.btnFechar:hover{
+    background-color: #4cc33f;
+    color:white;
+}
+
+#clasImg{
+    display: flex;
+}
+
+#clasImagens{
+    width: 100%;
+}
+
+#clasImagens img{
+    width: 20%;
+    margin-left: 18%;
+}
+
+#clasImagens h4{
+    margin-left: 22%;
+    display: inline;
+}
+
+#botoes{
+    display: flex;
+}
+
+#tabela{
+    width: 95%;
+    height: 650px;
+}
+
+#qual{
+    margin-left: 20%;
+}
+
+#ex{
+    margin-left: 20%;
+}
+
+.linha{
+    background-color: #3a9f2e;
+    width: 100%;
+    height: 2px;
+    margin-top: 40px;
+}
+
+#areaImg{
+    width: 100%;
+}
+
+#areaImg img{
+    width: 70%;
+    margin-left: 15%;
+    height: 500px;
+}
+
+#aCalc{
+    float: right;
+    color: #3a9f2e;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#aCalc:hover{
+    color: #4cc33f;
+}
+
+#rodape{
+    width: 80%;
+    height:150px;
+    background-color: #3a9f2e;
+    margin-left: 10%;
+    margin-bottom: 0;
+    margin-top: 40px;
+    border-radius: 4px;
+}
+
+#rodape img{
+    width: 20%;
+    height: 40%;
+    float: right;
+    margin-top: 40px;
+}
+
+#rodape a{
+    float: left;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+#rodape a:hover{
+    color: rgb(237, 253, 233);
+}

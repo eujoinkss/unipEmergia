@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/estilocalc.css" media="screen" />
+    <script type="text/javascript" src="js/jsindex.js"></script>
+    <link rel="icon" href="img/folhanoBG.jfif">
+    <title>Calculadora Emérgica</title>
+</head>
+<body>
+    <header id="cabecalho" align="center">
+        <img src="img/bannerPag.jfif" alt="Banner principal">
+    </header>
+    <h1 id="txtCalc">Calculadora Emérgica</h1>
+    <div id="bodyCalc">
+
+        <div class="inputs" id="inputs1">
+            <div class="campo" id="inputR">
+                <p>R (Recursos renováveis):</p>
+                <input type="number" id="R" min="1" max="999">
+            </div>
+            <div class="campo" id="inputN">
+                <p>N (Recursos não renováveis):</p>
+                <input type="number" id="N" min="1" max="999">
+            </div>
+        </div>
+        <div class="inputs" id="inputs2">
+            <div class="campo" id="inputF">
+                <p>F (Recursos da economia):</p>
+                <input type="number" id="F" min="1" max="999">
+            </div>
+            <div class="campo" id="inputEp">
+                <p>Ep (Produção do sistema):</p>
+                <input type="number" id="Ep" min="1" max="999">
+            </div>
+        </div>
+
+        <button class="btn" id="btnCalcular" onclick="calcularSistema()">Calcular -></button>
+
+            <div id="resultados">
+                <ul>
+                    <li id="EmergiaTotal"></li>
+                    <li id="UEV"></li>
+                    <li id="EYR"></li>
+                    <li id="ELR"></li>
+                    <li id="EIR"></li>
+                    <li id="%R"></li>
+                    <li id="ESI"></li>
+                </ul>
+            </div>
+    </div>
+    <footer id="rodape" align="center">
+        <a id="creditos" href="index.html"><- Voltar a explicação</a>
+        <img src="img/UNIPlogo.png" alt="logo UNIP">
+    </footer>
+</body>
+</html>
